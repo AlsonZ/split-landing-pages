@@ -1,0 +1,26 @@
+.html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  position: relative;
+}
+
+#pepsi .background {
+  width: 100%;
+  height: 100%;
+  background: blue;
+}
+#pepsi .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
