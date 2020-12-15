@@ -5,10 +5,22 @@ body {
   padding: 0;
   width: 100%;
 }
-
 .container {
   height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.container:hover > .landing-container {
+  width: 75%;
+}
+.container:hover > .landing-container:not(:hover) {
+  width: 25%;
+}
+.landing-container {
+  height: 100%;
+  width: 50%;
   position: relative;
+  transition: 0.45s ease-in-out;
 }
 
 #pepsi .background {
@@ -17,6 +29,19 @@ body {
   background: blue;
 }
 #pepsi .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#coke .background {
+  width: 100%;
+  height: 100%;
+  background: red;
+}
+#coke .overlay {
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
