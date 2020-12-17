@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  font-family: "Roboto", sans-serif;
 }
 .container {
   height: 100%;
@@ -22,30 +23,36 @@ body {
   position: relative;
   transition: 0.45s ease-in-out;
 }
-
-#pepsi .background {
+.background {
   width: 100%;
   height: 100%;
+}
+#pepsi .background {
   background: blue;
 }
-#pepsi .overlay {
-  background: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 #coke .background {
-  width: 100%;
-  height: 100%;
   background: red;
 }
-#coke .overlay {
+.overlay {
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.overlay h1 {
+  color: white;
+  font-size: 4rem;
+}
+.overlay button {
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  padding: 1rem 3rem;
+  font-size: 1rem;
 }
