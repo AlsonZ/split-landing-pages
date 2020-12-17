@@ -35,7 +35,7 @@ body {
   background-image: url(./pepsi-big.png);
 }
 #coke .background {
-  background: #ec1d23;
+  background: #cf161c;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -52,10 +52,21 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: 0.45s ease-in-out;
+}
+.overlay:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+#coke .overlay:hover > button {
+  background: #cf161c3a;
+}
+#pepsi .overlay:hover > button {
+  background: #0062bd3a;
 }
 .overlay h1 {
   color: white;
   font-size: 4rem;
+  text-shadow: black 0px 0px 10px;
 }
 .overlay button {
   border: 1px solid white;
@@ -63,4 +74,7 @@ body {
   color: white;
   padding: 1rem 3rem;
   font-size: 1rem;
+  text-shadow: black 0px 0px 10px;
+  box-shadow: 1px 1px 10px black;
+  transition: 0.45s ease-in-out;
 }
